@@ -10,7 +10,7 @@ def generate_date():  # Генерация случайной даты
 
 def generate_fullname():  # Генерация случайного ФИО
     from lib import FullNames
-    return FullNames[random.randint(1, 999)]
+    return FullNames[random.randint(0, 999)]
 
 
 def generate_email(to_full_name: str = ''):  # Генерация случайного email, если в функцию передать ФИО в формате -
