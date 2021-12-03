@@ -10,13 +10,13 @@ def generate_date():  # Генерация случайной даты
 
 def generate_fullname():  # Генерация случайного ФИО
     from lib import FullNames
-    return FullNames[random.randint(1, 100)]
+    return FullNames[random.randint(1, 1000)]
 
 
 def generate_email(to_full_name: str = ''):  # Генерация случайного email, если в функцию передать ФИО в формате -
     # Фамилия Имя Отчество вернет email в формате вышкинской почты
     if to_full_name == '':
-        return f'example{random.randint(1,100)}@miem.hse.ru'
+        return f'example{random.randint(1,1000)}@miem.hse.ru'
     else:
         from lib import Dict
         fio_array = to_full_name.split(' ')
